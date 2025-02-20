@@ -140,13 +140,13 @@
       </div>
     </div>
 
-    <header>
+   <header>
       <div class="container-fluid">
         <div class="row py-3 border-bottom">
           
           <div class="col-sm-4 col-lg-3 text-center text-sm-start">
             <div class="main-logo">
-              <a href="index.html">
+              <a style="text-decoration:none" href="index.html">
                 <img src="images/logoDime.png" style="height: 100px; width: auto;" alt="logo" class="img-fluid">
               </a>
             </div>
@@ -157,13 +157,17 @@
               <div class="col-md-4 d-none d-md-block">
                 <select class="form-select border-0 bg-transparent">
                   <option>Todas</option>
-                  <option>Iluminación</option>
-                    <option>Iluminación Exterior</option>
-                    <option>Iluminación Interior</option>
-                    <option>Iluminación Vial</option>
-                    <option>Placas y Accesorios Eléctricos</option>
-                    <option>Material Eléctrico</option>
-                    <option>Conductores</option>  
+				  
+                    <o
+					<option>Iluminación</option><option>Accesorios</option>
+					<option>Cable</option>
+					<option>Manguera</option>
+					<option>Material Eléctrico</option>
+					<option>Tubería</option>
+					<option>Productos Galvanizados</option>
+					<option>Charola</option>
+					<option>Postes , Bases,Registros</option>
+ 
                 </select>
               </div>
               <div class="col-11 col-md-7">
@@ -184,22 +188,22 @@
 
             <ul class="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <a href="#" class=" bg-light p-2 mx-1" style="text-decoration:none;color:#003588">
+                <a style="text-decoration:none" href="login.html" class=" bg-light p-2 mx-1" style="text-decoration:none;color:#003588">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg> <strong>Mi cuenta</strong>
                 </a>
               </li>
               <li>
-                <a href="#" class="rounded-circle bg-light p-2 mx-1">
+                <a style="text-decoration:none" href="#" class="rounded-circle bg-light p-2 mx-1">
                   <svg style="color:#e3032b" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
                 </a>
               </li>
               <li class="d-lg-none">
-                <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <a style="text-decoration:none" href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
                 </a>
               </li>
               <li class="d-lg-none">
-                <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                <a style="text-decoration:none" href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
                 </a>
               </li>
@@ -234,61 +238,83 @@
               
                 <!-- Marcas, enlaces rapidos -->
                 <div class="offcanvas-body">
-                  <!-- Categorias de lamparas *(traerlas de la base de datos para renderizar) -->
-                  <select class="filter-categories border-0 mb-0 me-5">
-                    <option>Busca por categoría</option>
-                    <option>Iluminación</option>
-                    <option>Iluminación Exterior</option>
-                    <option>Iluminación Interior</option>
-                    <option>Iluminación Vial</option>
-                    <option>Placas y Accesorios Eléctricos</option>
-                    <option>Material Eléctrico</option>
-                    <option>Conductores</option>  
-                  </select>
+               
                   <!-- fin de las categorias -->
               
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                      <li class="nav-item active">
-                      <a href="#women" class="nav-link">Inicio</a>
+                      <a style="text-decoration:none" href="index.html" class="nav-link">Inicio</a>
                     </li>
 					
-					<li class="nav-item active">
-                      <a href="About.html" class="nav-link">Nosotros</a>
-                    </li>
+					<li class="nav-item active"><a style="text-decoration:none" href="About.html" class="nav-link">Nosotros</a></li><li class="nav-item active"><a style="text-decoration:none" href="Contacto.html" class="nav-link">Contacto</a></li>
 					 
 					 <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Soluciones</a>
                       <ul class="dropdown-menu" aria-labelledby="pages">
-                        <li><a href="Solu_Iluminacion.html" class="dropdown-item">Iluminación  </a></li>
-                        <li><a href="Solu_Material.html" class="dropdown-item">Material Eléctrico </a></li>
-                        <li><a href="Solu_EngRenovable.html" class="dropdown-item">Energía Renovable </a></li>
-                        <li><a href="Cart.html" class="dropdown-item">Cart </a></li>
-                        <li><a href="Checkout.html" class="dropdown-item">Checkout </a></li>
-                        <li><a href="Solu_InstalacionElec.html" class="dropdown-item">Instalación Eléctrica </a></li>
-                        <li><a href="Solu_Levantamiento.html" class="dropdown-item">Levantamiento y Conteo en obra y/o Planos en Obra </a></li>
-                        <li><a href="Solu_Garantia.html" class="dropdown-item">Garantía y Postventa </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Iluminacion.html" class="dropdown-item">Iluminación  </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Material.html" class="dropdown-item">Material Eléctrico </a></li>
+                        <li><a style="text-decoration:none" href="Solu_EngRenovable.html" class="dropdown-item">Energía Renovable </a></li>
+                        
+                        <li><a style="text-decoration:none" href="Solu_InstalacionElec.html" class="dropdown-item">Instalación Eléctrica </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Levantamiento.html" class="dropdown-item">Levantamiento y Conteo en obra y/o Planos en Obra </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Garantia.html" class="dropdown-item">Garantía y Postventa </a></li>
                       </ul>
                     </li>
 					
-					<li class="nav-item active">
-                      <a href="#women" class="nav-link">SIMON</a>
+				
+					
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación de hogar y Jardín</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Tecnolite</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Calux</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Philco</a></li>
+					  </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a href="#men" class="nav-link">TECNOLITE</a>
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación Industrial</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Supra</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Energain</a></li>
+					  </ul>
                     </li>
-                    <li class="nav-item">
-                      <a href="#kids" class="nav-link">IUSA</a>
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación de Proyectos</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Zeraus</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Construlita</a></li>
+					  </ul>
                     </li>
-                    <li class="nav-item">
-                      <a href="#accessories" class="nav-link">TLapps</a>
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación Variedad</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Forthlighting</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Simon</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Tlapps</a></li>
+					  </ul>
                     </li>
+					
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Material Eléctrico y Otros</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">IUSA</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Conductores del Norte</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Tuboflex</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Plastistrech</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Anclo</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Argos</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Jupiter</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Emsa</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">TAMSA</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Charofil</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">ILUMAX</a></li>
+					  </ul>
+                    </li>
+					
+				
+					
                     
-                    <li class="nav-item">
-                      <a href="#brand" class="nav-link">CALUX</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#blog" class="nav-link">PHILCO</a>
-                    </li>
+					
 					
                   </ul>
                 
@@ -299,96 +325,189 @@
         </div>
       </div>
     </header>
-
-    <!-- Sección principal -->
-
    
 
-    <section class="py-5 overflow-hidden">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-  <br><br>
-              <div class="section-header d-flex flex-wrap justify-content-between mb-5" >
-                <h2 class="section-title" style="color:#003588">Acerca de Nosotros</h2>
-                 <div class="row">
-               <div class="col-md-6">
-               <p>Somos un equipo especializado en diferentes campos de la construcción electromecánica, que se une para poder 
-               ofrecer un servicio integral a nuestros clientes, beneficiándolos con nuestra experiencia y compromiso.
-  
-              En Dimeqro, brindamos soluciones en diseño, instalación y suministro de productos de 
-              iluminación y material eléctrico. Trabajamos con marcas de renombre como 
-              <h5 style="color:#ffca42 !important">SIMON, TECNOLITE, IUSA, TLapps, CALUX y PHILCO</h5> para garantizar calidad y eficiencia en cada proyecto.</p>
-  
-              <h6 style="color:#003588">Nuestros servicios incluyen:</h6>
-  
-  <ul>
-              <li>Iluminación residencial, comercial e industrial</li>
-              <li>Energía renovable</li>
-              <li>Instalaciones eléctricas</li>
-              <li>Levantamiento y conteo en obra y planos eléctricos</li>
-              <li>Asesoría técnica personalizada</li>
-          </ul>	
-              <h5>Nos enfocamos en transformar espacios con soluciones modernas, eficientes y sustentables. ¡Conócenos y descubre cómo podemos ser parte del éxito de tus proyectos!
-              </h5>
-              </div>
-               <div class="col-md-6">
-                <img src="images/t4.png" class="img-fluid"  style="object-fit: cover;">
-               </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
+    <section class="py-3 d-none d-md-block" style="background-image: url('images/nosotros.png');background-repeat: no-repeat;background-size: cover;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="banner-blocks">
+            
           
-        </div>
-        
-        
-      </section>
-      
-       <section class="py-5">
-        <div class="container-fluid">
-  
-          <div class="bg-secondary py-5 my-5 rounded-5" style="background-color:#ffca42 !important">
-            <div class="container my-5">
-              <div class="row">
-                <div class="col-md-6 p-5">
-                  <div class="section-header">
-                    <h1 class="sdisplay-4">Si eres un cliente  <span style="color:#fff !important ">con un proyecto</span> o desarrollo inmobiliario o constructor</h1>
-                    <h2>Contactanos por que tenemos <span style="color:#fff !important ">beneficios exclusivos</span> para ti.</h2>
+              
+              <div class="banner-ad bg-light block-2" 
+              style="background: url('images/focoazul.png') no-repeat right bottom; background-size: 45%;background-color:rgba(255,255,255,.8) !important">
+           <div class="row banner-content p-5">
+             <div class="content-wrapper col-md-7">
+               <h3>¿Tienes un proyecto o desarrollo </h3>
+               <h3 class="item-title" style="color:#003588 !important">inmobiliario o constructor?</h3>
+               
+               <a style="text-decoration:none" href="contacto.html" class="btn btn-primary btn-lg  fs-6 rounded-1 px-4 py-3 mt-3">Contactanos por que tenemos beneficios exclusivos para ti. <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+             </div>
+           </div>
+         </div>
+		 
+        <div class="banner-ad bg-warning block-3" style="background:url('https://png.pngtree.com/png-clipart/20240416/original/pngtree-hanging-lights-vector-png-image_14867848.png') no-repeat;background-position: right bottom;background-size: 50%;background-color:#ffe600 !important">
+                <div class="row banner-content p-5">
+
+                  <div class="content-wrapper col-md-7">
+                    <h3 class="item-title">Encuentranos En Mercado Libre</h3>
+                    <small class="mb-3">Descubre nuestra amplia gama de productos de iluminación y material eléctrico.</small>
+                    <a style="text-decoration:none" href="https://www.mercadolibre.com.mx/pagina/dd20240725130114" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3"><img src="https://xentra.mx/imagenes/mercado_logo.png" alt="Mercado Libre" class="me-2" style="height: 30px;"/> </a>
+                    
                   </div>
-                  
+
                 </div>
-                <div class="col-md-6 p-5">
-                  <form>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Nombre</label>
-                      <input type="text"
-                        class="form-control form-control-lg" name="name" id="name" placeholder="Escribe tu nombre...">
-                    </div>
-                    <div class="mb-3">
-                      <label for="" class="form-label">Email / Teléfono</label>
-                      <input type="email" class="form-control form-control-lg" name="text" id="email" placeholder="Escribe tu contacto...">
-                    </div>
-                    <div class="form-check form-check-inline mb-3">
-                      <label class="form-check-label" for="subscribe">
-                      <input class="form-check-input" type="checkbox" id="subscribe" value="subscribe">
-                      Subscribe to the newsletter</label>
-                    </div>
-                    <div class="d-grid gap-2">
-                      <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
-                    </div>
-                  </form>
-                  
-                </div>
-                
               </div>
-              
+
             </div>
+            <!-- / Banner Blocks -->
+              
           </div>
-          
         </div>
-      </section>
+      </div>
+    </section>
+	
+	
+	 <section class="py-5 overflow-hidden">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="section-header d-flex flex-wrap justify-content-between mb-5" >
+              <h2 class="section-title" style="color:#003588">Acerca de Nosotros</h2>
+			   <div class="row">
+			 <div class="col-md-6">
+			 <p>Somos un equipo especializado en diferentes campos de la construcción electromecánica, que se une para poder 
+			 ofrecer un servicio integral a nuestros clientes, beneficiándolos con nuestra experiencia y compromiso.
+
+			En Dimeqro, brindamos soluciones en diseño, instalación y suministro de productos de 
+			iluminación y material eléctrico. Trabajamos con marcas de renombre como 
+			<h5 style="color:#003588 !important">SIMON, TECNOLITE, IUSA, TLapps, CALUX y PHILCO</h5> para garantizar calidad y eficiencia en cada proyecto.</p>
+
+			<h6 style="color:#003588 ">Nuestros servicios incluyen:</h6>
+
+<ul>
+			<li>Iluminación residencial, comercial e industrial</li>
+			<li>Energía renovable</li>
+			<li>Instalaciones eléctricas</li>
+			<li>Levantamiento y conteo en obra y planos eléctricos</li>
+			<li>Asesoría técnica personalizada</li>
+		</ul>	
+			<h5>Nos enfocamos en transformar espacios con soluciones modernas, eficientes y sustentables. ¡Conócenos y descubre cómo podemos ser parte del éxito de tus proyectos!
+            </h5>
+			</div>
+			 <div class="col-md-6">
+			  <img src="images/t4.png" class="img-fluid"  style="object-fit: cover;">
+			 </div>
+			  </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+	  
+	  
+    </section>
+	
+	
+	
+	<section class="container-fluid">
+	    <div class="row">
+         
+
+        
+              <h2 class="section-title">¡Estamos A Tus Órdenes! <span style="color:#003588">Nuestros Servicios</span></h2>
+
+     
+            
+      
+    
+    <div class="row g-4">
+	
+        <div class="col-md-4">
+            <div class="product-item">
+			<a style="text-decoration:none" href="Solu_Iluminacion.html">
+                <img src="images/s1.png" class="card-img-top" alt="Iluminación">
+                <div class="card-body">
+				    <br>
+                    <h5 class="card-title"><i class="bi bi-lightbulb"></i> Iluminación</h5>
+                    <p class="card-text">En DimeQro creamos diseños de iluminación.</p>
+                </div>
+				</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-item">
+			<a style="text-decoration:none" href="Solu_Levantamiento.html">
+                <img src="images/s3.png" class="card-img-top" alt="Planos eléctricos">
+                <div class="card-body">
+				    <br>
+                    <h5 class="card-title"><i class="bi bi-layout-text-window"></i> Levantamiento y conteo en obra y/o planos eléctricos</h5>
+                </div>
+				</a>
+				</div>
+            
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-item">
+			<a style="text-decoration:none" href="Solu_Material.html">
+                <img src="images/s4.png" class="card-img-top" alt="Material eléctrico">
+                <div class="card-body">
+				    <br>
+                    <h5 class="card-title"><i class="bi bi-tools"></i> Material Eléctico</h5>
+                    <p class="card-text">Con una amplia gama de materiales eléctricos.</p>
+                </div>
+				</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-item">
+			<a style="text-decoration:none" href="Solu_Garantia.html">
+                <img src="images/s5.png" class="card-img-top" alt="Garantía y postventa">
+                <div class="card-body">
+                    <br>
+					<h5 class="card-title"><i class="bi bi-headset"></i> Garantía y Postventa</h5>
+                    <p class="card-text">Dimeqro cuenta con la distribución de garantías y servicio postventa.</p>
+                </div>
+				</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-item">
+			<a style="text-decoration:none" href="Solu_InstalacionElec.html">
+                <img src="images/s6.png" class="card-img-top" alt="Instalación eléctrica">
+                <div class="card-body">
+                    <br>
+					<h5 class="card-title"><i class="bi bi-plug"></i> Instalación Eléctrica</h5>
+                    <p class="card-text">Realizamos proyectos eléctricos.</p>
+                </div>
+				</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-item">
+			<a style="text-decoration:none" href="Solu_EngRenovable.html">
+                <img src="images/s8.png" class="card-img-top" alt="Energía renovable">
+                <div class="card-body">
+				    <br>
+                    <h5 class="card-title"><i class="bi bi-sun"></i> Energía Renovable</h5>
+                    <p class="card-text">Ofrecemos proyectos de energía renovable.</p>
+                </div>
+				</a>
+            </div>
+        </div>
+    </div>
+</section>
+	
+	
       
       <section class="py-5 overflow-hidden">
         <div class="container-fluid">
@@ -475,6 +594,161 @@
                       </div>
                     </div>
                   </div>
+				  
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Supra.png" class="img-fluid rounded" alt="Supra" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Energain.png" class="img-fluid rounded" alt="Energain" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Zeraus.png" class="img-fluid rounded" alt="Zeraus" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Construlita.png" class="img-fluid rounded" alt="Construlita" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Forthlighting.png" class="img-fluid rounded" alt="Forthlighting" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Conductores del Norte.png" class="img-fluid rounded" alt="Conductores del Norte" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Tuboflex.png" class="img-fluid rounded" alt="Tuboflex" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Plastistrech.png" class="img-fluid rounded" alt="Plastistrech" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Anclo.png" class="img-fluid rounded" alt="Anclo" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Argos.png" class="img-fluid rounded" alt="Argos" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Jupiter.png" class="img-fluid rounded" alt="Jupiter" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Emsa.png" class="img-fluid rounded" alt="Emsa" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Agregando TAMSA -->
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/TAMSA.png" class="img-fluid rounded" alt="TAMSA" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Agregando Charofil -->
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/Charofil.png" class="img-fluid rounded" alt="Charofil" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Agregando ILUMAX -->
+  <div class="swiper-slide">
+    <div class="card mb-3 p-3 rounded-4 shadow border-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="images/ILUMAX.png" class="img-fluid rounded" alt="ILUMAX" style="width: 80%; height: 200px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
                   
                   
                 </div>
@@ -614,7 +888,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 copyright">
-              <p>© 2023 Foodmart. All rights reserved.</p>
+              <small style="color:#003588">Encuentranos en:</small><img src="images/mercado.png" alt="Mercado Libre" class="me-2" style="height: 30px;"/><p>© 2023 Foodmart. All rights reserved.</p>
             </div>
             <div class="col-md-6 credit-link text-start text-md-end">
               <p>Free HTML Template by <a href="https://templatesjungle.com/">TemplatesJungle</a> Distributed by <a href="https://themewagon">ThemeWagon</a></p>

@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://db.onlinewebfonts.com/c/2a61d83e6af5b73f8f7751643f767325?family=GreycliffCF-DemiBold" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
   </head>
   <body>
 
@@ -140,13 +143,13 @@
       </div>
     </div>
 
-    <header>
+  <header>
       <div class="container-fluid">
         <div class="row py-3 border-bottom">
           
           <div class="col-sm-4 col-lg-3 text-center text-sm-start">
             <div class="main-logo">
-              <a href="index.html">
+              <a style="text-decoration:none" href="index.html">
                 <img src="images/logoDime.png" style="height: 100px; width: auto;" alt="logo" class="img-fluid">
               </a>
             </div>
@@ -157,13 +160,14 @@
               <div class="col-md-4 d-none d-md-block">
                 <select class="form-select border-0 bg-transparent">
                   <option>Todas</option>
-                  <option>Iluminación</option>
-                    <option>Iluminación Exterior</option>
-                    <option>Iluminación Interior</option>
-                    <option>Iluminación Vial</option>
-                    <option>Placas y Accesorios Eléctricos</option>
-                    <option>Material Eléctrico</option>
-                    <option>Conductores</option>  
+                  <option>Iluminación</option><option>Accesorios</option>
+					<option>Cable</option>
+					<option>Manguera</option>
+					<option>Material Eléctrico</option>
+					<option>Tubería</option>
+					<option>Productos Galvanizados</option>
+					<option>Charola</option>
+					<option>Postes , Bases,Registros</option>
                 </select>
               </div>
               <div class="col-11 col-md-7">
@@ -184,22 +188,22 @@
 
             <ul class="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <a href="#" class=" bg-light p-2 mx-1" style="text-decoration:none;color:#003588">
+                <a style="text-decoration:none" href="login.html" class=" bg-light p-2 mx-1" style="text-decoration:none;color:#003588">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg> <strong>Mi cuenta</strong>
                 </a>
               </li>
               <li>
-                <a href="#" class="rounded-circle bg-light p-2 mx-1">
+                <a style="text-decoration:none" href="#" class="rounded-circle bg-light p-2 mx-1">
                   <svg style="color:#e3032b" width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
                 </a>
               </li>
               <li class="d-lg-none">
-                <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <a style="text-decoration:none" href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
                 </a>
               </li>
               <li class="d-lg-none">
-                <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                <a style="text-decoration:none" href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
                 </a>
               </li>
@@ -234,61 +238,83 @@
               
                 <!-- Marcas, enlaces rapidos -->
                 <div class="offcanvas-body">
-                  <!-- Categorias de lamparas *(traerlas de la base de datos para renderizar) -->
-                  <select class="filter-categories border-0 mb-0 me-5">
-                    <option>Busca por categoría</option>
-                    <option>Iluminación</option>
-                    <option>Iluminación Exterior</option>
-                    <option>Iluminación Interior</option>
-                    <option>Iluminación Vial</option>
-                    <option>Placas y Accesorios Eléctricos</option>
-                    <option>Material Eléctrico</option>
-                    <option>Conductores</option>  
-                  </select>
+               
                   <!-- fin de las categorias -->
               
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                      <li class="nav-item active">
-                      <a href="#women" class="nav-link">Inicio</a>
+                      <a style="text-decoration:none" href="index.html" class="nav-link">Inicio</a>
                     </li>
 					
-					<li class="nav-item active">
-                      <a href="#" class="nav-link">Nosotros</a>
-                    </li>
+					<li class="nav-item active"><a style="text-decoration:none" href="About.html" class="nav-link">Nosotros</a></li><li class="nav-item active"><a style="text-decoration:none" href="Contacto.html" class="nav-link">Contacto</a></li>
 					 
 					 <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Soluciones</a>
                       <ul class="dropdown-menu" aria-labelledby="pages">
-                        <li><a href="Solu_Iluminacion.html" class="dropdown-item">Iluminación  </a></li>
-                        <li><a href="Solu_Material.html" class="dropdown-item">Material Eléctrico </a></li>
-                        <li><a href="Solu_EngRenovable.html" class="dropdown-item">Energía Renovable </a></li>
-                        <li><a href="Cart.html" class="dropdown-item">Cart </a></li>
-                        <li><a href="Checkout.html" class="dropdown-item">Checkout </a></li>
-                        <li><a href="Solu_InstalacionElec.html" class="dropdown-item">Instalación Eléctrica </a></li>
-                        <li><a href="Solu_Levantamiento.html" class="dropdown-item">Levantamiento y Conteo en obra y/o Planos en Obra </a></li>
-                        <li><a href="Solu_Garantia.html" class="dropdown-item">Garantía y Postventa </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Iluminacion.html" class="dropdown-item">Iluminación  </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Material.html" class="dropdown-item">Material Eléctrico </a></li>
+                        <li><a style="text-decoration:none" href="Solu_EngRenovable.html" class="dropdown-item">Energía Renovable </a></li>
+                        
+                        <li><a style="text-decoration:none" href="Solu_InstalacionElec.html" class="dropdown-item">Instalación Eléctrica </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Levantamiento.html" class="dropdown-item">Levantamiento y Conteo en obra y/o Planos en Obra </a></li>
+                        <li><a style="text-decoration:none" href="Solu_Garantia.html" class="dropdown-item">Garantía y Postventa </a></li>
                       </ul>
                     </li>
 					
-					<li class="nav-item active">
-                      <a href="#women" class="nav-link">SIMON</a>
+				
+					
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación de hogar y Jardín</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Tecnolite</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Calux</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Philco</a></li>
+					  </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a href="#men" class="nav-link">TECNOLITE</a>
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación Industrial</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Supra</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Energain</a></li>
+					  </ul>
                     </li>
-                    <li class="nav-item">
-                      <a href="#kids" class="nav-link">IUSA</a>
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación de Proyectos</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Zeraus</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Construlita</a></li>
+					  </ul>
                     </li>
-                    <li class="nav-item">
-                      <a href="#accessories" class="nav-link">TLapps</a>
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación Variedad</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Forthlighting</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Simon</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Tlapps</a></li>
+					  </ul>
                     </li>
+					
+					<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Material Eléctrico y Otros</a>
+                      <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li><a style="text-decoration:none" href="venta.html" class="dropdown-item">IUSA</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Conductores del Norte</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Tuboflex</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Plastistrech</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Anclo</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Argos</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Jupiter</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Emsa</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">TAMSA</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">Charofil</a></li>
+						<li><a style="text-decoration:none" href="venta.html" class="dropdown-item">ILUMAX</a></li>
+					  </ul>
+                    </li>
+					
+				
+					
                     
-                    <li class="nav-item">
-                      <a href="#brand" class="nav-link">CALUX</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#blog" class="nav-link">PHILCO</a>
-                    </li>
+					
 					
                   </ul>
                 
@@ -300,65 +326,27 @@
       </div>
     </header>
 
-    <!-- Sección principal -->
-
-   
-
-      <section class="py-3" style="background-image: url('');background-repeat: no-repeat;background-size: cover;">
+      <section class="py-3 d-none d-md-block" style="background-image: url('images/m5.png');background-repeat: no-repeat;background-size: contain;width:100%">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
   
               <div class="banner-blocks">
                 
-                <!-- Bloque 1 para Control de Accesos -->
-                <div class="banner-ad large bg-info block-1" style="background-color:#4a4e69 !important">
-  
-                  <div class="swiper main-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="row banner-content p-5">
-                          <div class="content-wrapper col-md-7">
-                            <div class="categories my-3" style="color:#fff !important">Control de Accesos</div>
-                            <h3 class="display-4"  style="color:#fff !important">Seguridad y eficiencia en la gestión de entradas</h3>
-                            <p style="color:#ccc !important">Ofrecemos soluciones avanzadas de control de accesos para garantizar la seguridad de tus instalaciones, optimizando el flujo de personas.</p>
-                            <a href="#" style="color:#fff !important;border:#fff solid 1px !important" class="btn btn-outline-primary btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Ver Más</a>
-                          </div>
-                          <div class="img-wrapper col-md-5 p-0">
-                            <img src="images/acceso.png" class="img-fluid" alt="Sistema de control de accesos" style="object-fit: cover;">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+
+           <div class="banner-ad bg-warning block-2" style="background:url('https://png.pngtree.com/png-clipart/20240416/original/pngtree-hanging-lights-vector-png-image_14867848.png') no-repeat;background-position: right bottom;background-size: 50%;background-color:rgba(255, 230, 0,.9) !important">
+                <div class="row banner-content p-5">
+
+                  <div class="content-wrapper col-md-7">
+                    <h3 class="item-title">Encuentranos En Mercado Libre</h3>
+                    <small class="mb-3">Descubre nuestra amplia gama de productos de iluminación y material eléctrico.</small>
+                    <a style="text-decoration:none" href="https://www.mercadolibre.com.mx/pagina/dd20240725130114" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3"><img src="https://xentra.mx/imagenes/mercado_logo.png" alt="Mercado Libre" class="me-2" style="height: 30px;"/> </a>
+                    
                   </div>
+
                 </div>
-                
-                <!-- Bloque 2 para Circuito Cerrado -->
-                <div class="banner-ad bg-light block-2" 
-                style="background: url('https://cdn.pixabay.com/photo/2016/10/06/20/55/security-camera-1725231_960_720.png') no-repeat right bottom; background-size: 45%;">
-             <div class="row banner-content p-5">
-               <div class="content-wrapper col-md-7">
-                 <div class="categories sale mb-3 pb-3 text-muted">Circuito Cerrado</div>
-                 <h3 class="item-title" style="color:#ffca42 !important">Supervisión constante en todo momento</h3>
-                 
-                 <a href="#" class="d-flex align-items-center nav-link">Ver más productos <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
-               </div>
-             </div>
-           </div>
-           
-          <!-- Bloque 3 para Soluciones en Automatización -->
-          <div class="banner-ad bg-warning block-3" style="background:url('https://cdn-icons-png.flaticon.com/512/2910/2910847.png') no-repeat;background-position: right bottom;background-size: 50%;background-color:#ffd166 !important">
-                  <div class="row banner-content p-5">
-  
-                    <div class="content-wrapper col-md-7">
-                      <h3 class="item-title">Automatización de Procesos</h3>
-                      <small class="mb-3">Transforma tus operaciones con tecnología avanzada que mejora la eficiencia y reduce costos.</small>
-                      <a href="https://example.com/automatizacion" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Ver Soluciones</a>
-                    </div>
-  
-                  </div>
-                </div>
+              </div>
+
   
               </div>
               <!-- / Banner Blocks -->
@@ -367,6 +355,304 @@
           </div>
         </div>
       </section>
+	  
+	 
+	
+	 <section class="py-5 overflow-hidden">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="section-header d-flex flex-wrap justify-content-between mb-5" >
+              <h2 class="section-title" style="color:#003588">Iluminación</h2>
+			   <div class="row">
+			 <div class="col-md-6">
+			 <p>En DimeQro Creamos diseňos de iluminación innovadores para cada espacio en construcción o remodelación. Contamos con un área de Desarrollos de Proyectos, el cual brinda asesoría a todos nuestros clientes, para el desarrollo de sus proyectos de iluminación especializados, con la má alta tecnología, servicio y calidad. Diseňo de iluminación Creamos diseňos de iluminación innovadores para cada espacio en construcción o remodelación, cubriendo las necesidades específicas de cada área, garantizando la satisfacción total a nuestros clientes.
+
+</p><p>Asesoría en proyectos de Iluminación Brindamos a cada uno de nuestros clientes que nos visitan y que nos siguen a través de nuestras redes sociales una asesoría profesional y especializada, para la correcta iluminación de sus espacios.</p>
+
+
+			<h5>Nos enfocamos en transformar espacios con soluciones modernas, eficientes y sustentables. ¡Conócenos y descubre cómo podemos ser parte del éxito de tus proyectos!
+            </h5>
+			</div>
+			 <div class="col-md-6">
+			  <center><img src="images/s2.png" class="img-fluid"  style="object-fit: cover;"></center>
+			 </div>
+			  </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+	  
+	  
+    </section>
+	
+	
+	
+   
+
+	
+	<!-- / Beneficios section -->
+    <section class="py-5 d-flex">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 justify-content-center">
+          <div class="col">
+            <div class="card mb-3 border-0 text-center">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="mb-3 text-dark">
+                    <svg style="color:#ffca42 !important" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 15a3 3 0 0 0-1.9-2.78l1.87-7a1 1 0 0 0-.18-.87A1 1 0 0 0 20.5 4H6.8l-.33-1.26A1 1 0 0 0 5.5 2h-2v2h1.23l2.48 9.26a1 1 0 0 0 1 .74H18.5a1 1 0 0 1 0 2h-13a1 1 0 0 0 0 2h1.18a3 3 0 1 0 5.64 0h2.36a3 3 0 1 0 5.82 1a2.94 2.94 0 0 0-.4-1.47A3 3 0 0 0 21.5 15Zm-3.91-3H9L7.34 6H19.2ZM9.5 20a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></svg>
+                  </div>
+                  <div class="card-body p-0">
+                    <h5>Recibe tus productos en menos de 48 hs</h5>
+                    <p class="card-text" style="font-size: 11px;">Tus paquetes están seguros. Tienes el respaldo de los envíos con Mercado Libre.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 border-0 text-center">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="mb-3 text-dark">
+                    <svg style="color:#ffca42 !important" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M19.63 3.65a1 1 0 0 0-.84-.2a8 8 0 0 1-6.22-1.27a1 1 0 0 0-1.14 0a8 8 0 0 1-6.22 1.27a1 1 0 0 0-.84.2a1 1 0 0 0-.37.78v7.45a9 9 0 0 0 3.77 7.33l3.65 2.6a1 1 0 0 0 1.16 0l3.65-2.6A9 9 0 0 0 20 11.88V4.43a1 1 0 0 0-.37-.78ZM18 11.88a7 7 0 0 1-2.93 5.7L12 19.77l-3.07-2.19A7 7 0 0 1 6 11.88v-6.3a10 10 0 0 0 6-1.39a10 10 0 0 0 6 1.39Zm-4.46-2.29l-2.69 2.7l-.89-.9a1 1 0 0 0-1.42 1.42l1.6 1.6a1 1 0 0 0 1.42 0L15 11a1 1 0 0 0-1.42-1.42Z"/></svg>
+                  </div>
+                  <div class="card-body p-0">
+                    <h5>Elige tu medio de pago favorito</h5>
+                    <p class="card-text" style="font-size: 11px;">Paga con tarjeta o en efectivo. Tu dinero está protegido con Mercado Pago.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 border-0 text-center">
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="mb-3 text-dark">
+                    <svg style="color:#ffca42 !important" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M22 5H2a1 1 0 0 0-1 1v4a3 3 0 0 0 2 2.82V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.18A3 3 0 0 0 23 10V6a1 1 0 0 0-1-1Zm-7 2h2v3a1 1 0 0 1-2 0Zm-4 0h2v3a1 1 0 0 1-2 0ZM7 7h2v3a1 1 0 0 1-2 0Zm-3 4a1 1 0 0 1-1-1V7h2v3a1 1 0 0 1-1 1Zm10 10h-4v-2a2 2 0 0 1 4 0Zm5 0h-3v-2a4 4 0 0 0-8 0v2H5v-8.18a3.17 3.17 0 0 0 1-.6a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3.17 3.17 0 0 0 1 .6Zm2-11a1 1 0 0 1-2 0V7h2ZM4.3 3H20a1 1 0 0 0 0-2H4.3a1 1 0 0 0 0 2Z"/></svg>
+                  </div>
+                  <div class="card-body p-0">
+                    <h5>Compra desde cualquier lugar</h5>
+                    <p class="card-text" style="font-size: 11px;">Suma los productos que quieras al carrito. Te los llevamos hasta dónde estés.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	
+	
+
+
+
+    <section class="py-5">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="bootstrap-tabs product-tabs">
+                      <div class="tabs-header d-flex justify-content-between border-bottom my-5">
+                          <h3>Nuestras Lámparas</h3>
+                      </div>
+                      <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                              <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                                  
+                                  <!-- Producto 1 -->
+                                  <div class="col">
+                                      <div class="product-item">
+                                          <span class="badge bg-success position-absolute m-3">-30%</span>
+                                          <a style="text-decoration:none" href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
+                                          <figure>
+                                              <a style="text-decoration:none" href="index.html" title="Lámpara Rústica">
+                                                  <img src="https://toasterhome.com/cdn/shop/products/Donosti_1_600x.png?v=1646324385" class="tab-image" alt="Lámpara Rústica">
+                                              </a>
+                                          </figure>
+                                          <h3>Lámpara Rústica Donosti</h3>
+                                          <span class="qty">1 unidad</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
+                                          <span class="price">$45.00 USD</span>
+                                          <div class="d-flex align-items-center justify-content-between">
+                                              <a style="text-decoration:none" href="#" class="nav-link">Añadir al Carrito <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <!-- Producto 2 -->
+                                  <div class="col">
+                                      <div class="product-item">
+                                          <span class="badge bg-success position-absolute m-3">-30%</span>
+                                          <a style="text-decoration:none" href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
+                                          <figure>
+                                              <a style="text-decoration:none" href="index.html" title="Lámpara Moderna">
+                                                  <img src="https://toasterhome.com/cdn/shop/products/Donosti_1_600x.png?v=1646324385" class="tab-image" alt="Lámpara Moderna">
+                                              </a>
+                                          </figure>
+                                          <h3>Lámpara Moderna Urban</h3>
+                                          <span class="qty">1 unidad</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
+                                          <span class="price">$48.00 USD</span>
+                                          <div class="d-flex align-items-center justify-content-between">
+                                              <a style="text-decoration:none" href="#" class="nav-link">Añadir al Carrito <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <!-- Producto 3 -->
+                                  <div class="col">
+                                      <div class="product-item">
+                                          <a style="text-decoration:none" href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
+                                          <figure>
+                                              <a style="text-decoration:none" href="index.html" title="Lámpara de Mesa">
+                                                  <img src="https://toasterhome.com/cdn/shop/products/Donosti_1_600x.png?v=1646324385" class="tab-image" alt="Lámpara de Mesa">
+                                              </a>
+                                          </figure>
+                                          <h3>Lámpara de Mesa Elegante</h3>
+                                          <span class="qty">1 unidad</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.8</span>
+                                          <span class="price">$55.00 USD</span>
+                                          <div class="d-flex align-items-center justify-content-between">
+                                              <a style="text-decoration:none" href="#" class="nav-link">Añadir al Carrito <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <!-- Producto 4 -->
+                                  <div class="col">
+                                      <div class="product-item">
+                                          <a style="text-decoration:none" href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
+                                          <figure>
+                                              <a style="text-decoration:none" href="index.html" title="Lámpara Colgante">
+                                                  <img src="https://toasterhome.com/cdn/shop/products/Donosti_1_600x.png?v=1646324385" class="tab-image" alt="Lámpara Colgante">
+                                              </a>
+                                          </figure>
+                                          <h3>Lámpara Colgante Moderna</h3>
+                                          <span class="qty">1 unidad</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.9</span>
+                                          <span class="price">$68.00 USD</span>
+                                          <div class="d-flex align-items-center justify-content-between">
+                                              <a style="text-decoration:none" href="#" class="nav-link">Añadir al Carrito <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <!-- Producto 5 -->
+                                  <div class="col">
+                                      <div class="product-item">
+                                          <a style="text-decoration:none" href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
+                                          <figure>
+                                              <a style="text-decoration:none" href="index.html" title="Lámpara Decorativa">
+                                                  <img src="https://toasterhome.com/cdn/shop/products/Donosti_1_600x.png?v=1646324385" class="tab-image" alt="Lámpara Decorativa">
+                                              </a>
+                                          </figure>
+                                          <h3>Lámpara Decorativa Natural</h3>
+                                          <span class="qty">1 unidad</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.7</span>
+                                          <span class="price">$42.00 USD</span>
+                                          <div class="d-flex align-items-center justify-content-between">
+                                              <a style="text-decoration:none" href="#" class="nav-link">Añadir al Carrito <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                              <!-- / product-grid -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+
+
+    <section class="py-5">
+      <div class="container-fluid">
+          <h2 class="my-5">Podrían interesarte...</h2>
+          
+          <!-- Categorías de productos -->
+          <a style="text-decoration:none" href="#" class="btn btn-warning me-2 mb-2">Iluminación Exterior</a>
+          <a style="text-decoration:none" href="#" class="btn btn-warning me-2 mb-2">Iluminación Interior</a>
+          <a style="text-decoration:none" href="#" class="btn btn-warning me-2 mb-2">Iluminación Vial</a>
+          <a style="text-decoration:none" href="#" class="btn btn-warning me-2 mb-2">Placas y Accesorios Eléctricos</a>
+          <a style="text-decoration:none" href="#" class="btn btn-warning me-2 mb-2">Material Eléctrico</a>
+          <a style="text-decoration:none" href="#" class="btn btn-warning me-2 mb-2">Conectores</a>
+  
+          <!-- Productos destacados -->
+          <h4 class="mt-4">Productos Recomendados:</h4>
+          <a style="text-decoration:none" href="#" class="btn btn-light text-dark border me-2 mb-2">Lámpara de Pared Elegante</a>
+          <a style="text-decoration:none" href="#" class="btn btn-light text-dark border me-2 mb-2">Lámpara Colgante Moderna</a>
+          <a style="text-decoration:none" href="#" class="btn btn-light text-dark border me-2 mb-2">Foco LED Inteligente</a>
+          <a style="text-decoration:none" href="#" class="btn btn-light text-dark border me-2 mb-2">Placa Decorativa de Enchufe</a>
+          <a style="text-decoration:none" href="#" class="btn btn-light text-dark border me-2 mb-2">Iluminación Solar Exterior</a>
+          <a style="text-decoration:none" href="#" class="btn btn-light text-dark border me-2 mb-2">Sensor de Movimiento para Iluminación</a>
+      </div>
+  </section>
+  
+
+<section class="py-5 overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-header mb-5">
+                    <h2 class="section-title text-primary">
+                        Somos un equipo comprometido con calidad, servicio, atención y asesoría para nuestros clientes.
+                    </h2>
+                </div>
+
+                <div class="accordion" id="faqAccordion">
+                    <!-- Pregunta 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                NORMA Oficial Mexicana
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Realizamos estudios y propuestas de Iluminación de acuerdo a la NORMA Oficial Mexicana NOM-025-STPS-2008 para áreas de trabajo y la NOM-013-ENER-2013 para vialidades públicas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Excelente calidad en nuestros servicios
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Ofrecemos un equilibrio de calidad vs precio en base a un convenio de precios por proyecto definido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Entregas Inmediatas
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Entregamos el material solicitado el mismo día en tu obra, considerando una programación de entregas y distancia de entrega.
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Fin del acordeón -->
+            </div>
+        </div>
+    </div>
+</section>
+
+	
+
 
       <section class="py-5">
         <div class="container-fluid">
@@ -411,6 +697,56 @@
           
         </div>
       </section>
+	  
+	<div class="container my-5">
+    <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                    <h5>NORMA Oficial Mexicana</h5>
+                    <p>Realizamos estudios y propuestas de iluminación de acuerdo a la NORMA Oficial Mexicana NOM-025-STPS-2008.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div>
+                    <h5>Calidad</h5>
+                    <p>Ofrecemos un equilibrio de calidad vs precio en base a un convenio de precios por proyecto definido.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-flag"></i>
+                </div>
+                <div>
+                    <h5>Eficiencia</h5>
+                    <p>Entregamos el material solicitado el mismo día en tu obra.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-pencil"></i>
+                </div>
+                <div>
+                    <h5>Asesoría Y Soporte</h5>
+                    <p>Asesoría profesional y especializada, para la correcta iluminación de sus espacios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- Footer -->
@@ -540,7 +876,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 copyright">
-              <p>© 2023 Foodmart. All rights reserved.</p>
+              <small style="color:#003588">Encuentranos en:</small><img src="images/mercado.png" alt="Mercado Libre" class="me-2" style="height: 30px;"/><p>© 2023 Foodmart. All rights reserved.</p>
             </div>
             <div class="col-md-6 credit-link text-start text-md-end">
               <p>Free HTML Template by <a href="https://templatesjungle.com/">TemplatesJungle</a> Distributed by <a href="https://themewagon">ThemeWagon</a></p>
@@ -553,5 +889,5 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
       <script src="js/plugins.js"></script>
       <script src="js/script.js"></script>
-    </body>
+	   </body>
   </html>

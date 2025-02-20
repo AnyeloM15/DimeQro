@@ -113,6 +113,7 @@ CSS STRUCTURE:
     --light-primary-color   : #eef1f3;
 }
 
+/*
 @import url(https://db.onlinewebfonts.com/c/2a61d83e6af5b73f8f7751643f767325?family=GreycliffCF-DemiBold);
 @font-face {
     font-family: "GreycliffCF-DemiBold";
@@ -122,7 +123,7 @@ CSS STRUCTURE:
     url("https://db.onlinewebfonts.com/t/2a61d83e6af5b73f8f7751643f767325.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/2a61d83e6af5b73f8f7751643f767325.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/2a61d83e6af5b73f8f7751643f767325.svg#GreycliffCF-DemiBold")format("svg");
-}
+}*/
 
 /* Fonts */
 :root {
@@ -761,3 +762,21 @@ h1,h2,h3,h4,h5,h6 {
   width: auto;
   object-fit: contain;
 }
+
+ .feature-icon {
+            background-color: #003588 !important;
+            color: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 24px;
+            flex-shrink: 0; /* Evita que los círculos se reduzcan */
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Espacio uniforme entre icono y texto */
+        }
