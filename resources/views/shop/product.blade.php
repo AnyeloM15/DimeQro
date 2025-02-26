@@ -118,7 +118,14 @@
    </div>
 </section>
 <br><br><br>
+
+
+
+@include('recursos-landing.productos')
+
 @endsection
+
+
 @section('js')
 <script>
    

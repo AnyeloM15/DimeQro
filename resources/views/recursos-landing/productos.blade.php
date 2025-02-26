@@ -8,7 +8,13 @@
                 <span>Explora nuestras categorías destacadas, donde encontrarás productos de calidad y las mejore ofertas.</span>
             
             @else
-            <h2 class="section-title">Nuestros Productos </h2><br><br>
+            @if(isset($product->name))
+               
+               <h4 class="section-title">Tambien podrian interesarte mas productos de la marca {{$product->brand->name}} </h4><br><br>
+            @else
+               <h2 class="section-title">Nuestros Productos </h2><br><br>
+            @endif
+            
             @endif
             </div>
         </div>
@@ -44,8 +50,10 @@
             };
 
             // Solo agregar si existen
-            @if(isset($type) && isset($id))
+            @if(isset($type) && isset($id) and !isset($product->name))
                 ajaxData["{{ $type }}"] = "{{ $id }}";
+            @elseif(isset($product->name))
+                 ajaxData["clave"] = "{{  $product->brand->name }}";
             @endif
 
 
@@ -73,7 +81,7 @@
                     }
                 },
                 error: function () {
-                    alert('Error al cargar los productos.');
+                    //alert('Error al cargar los productos.');
                 }
             });
         }

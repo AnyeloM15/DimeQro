@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\StreamedResponse;
+use Auth;
 
 use DataTables;
 
@@ -147,6 +148,7 @@ class ProductController extends Controller
 
 
     public function cart(){
+        session()->forget('last_order_id'); 
         return view('shop.cart');
     }
 
@@ -181,6 +183,13 @@ class ProductController extends Controller
 
     public function agregarAlCarrito(Request $request)
     {
+
+        if (!Auth::check()) {
+            return response()->json([
+                'status' => 'login'
+            ]);
+        }
+
         // Validar datos
         $request->validate([
             'id' => 'required|integer|exists:products,id',
@@ -228,6 +237,9 @@ class ProductController extends Controller
             $precioTotal += $item['precio'] * $item['cantidad'];
             $totalArticulos += $item['cantidad'];
         }
+
+        
+
 
         return response()->json([
             'status' => 'success',

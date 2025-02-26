@@ -12,9 +12,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icono.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icono.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icono.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url('assets/img/icono.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url('assets/img/icono.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('assets/img/icono.png')}}">
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -83,7 +83,7 @@
       <div class="preloader">
       </div>
     </div>
-    <a style="text-decoration:none" href="https://wa.me/4421071706" target="_blank" class="btn-whatsapp-float">
+    <a style="text-decoration:none" href="https://wa.me/{{ DB::table('site_settings')->first()->whatsapp}}" target="_blank" class="btn-whatsapp-float">
       <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
   </a>
 
@@ -123,13 +123,13 @@
                 <select  class="form-select border-0 bg-transparent">
                   <option>Todas</option>
                   <option>Iluminación</option><option>Accesorios</option>
-					<option>Cable</option>
-					<option>Manguera</option>
-					<option>Material Eléctrico</option>
-					<option>Tubería</option>
-					<option>Productos Galvanizados</option>
-					<option>Charola</option>
-					<option>Postes , Bases,Registros</option>
+                  <option>Cable</option>
+                  <option>Manguera</option>
+                  <option>Material Eléctrico</option>
+                  <option>Tubería</option>
+                  <option>Productos Galvanizados</option>
+                  <option>Charola</option>
+                  <option>Postes , Bases,Registros</option>
                 </select>
               </div>
               <div  class="col-11 col-md-7">
@@ -143,12 +143,12 @@
           <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
             <div class="support-box text-end d-none d-xl-block">
               <span class="fs-6 text-muted">Contáctanos</span>
-              <h5 class="mb-0">(442)107-1706</h5>
+              <h5 class="mb-0"> {{ DB::table('site_settings')->first()->phone }}</h5>
             </div>
 
             <ul class="d-flex justify-content-end list-unstyled m-0">
               <li >
-                <a style="text-decoration:none" href="login" class=" bg-light p-2 mx-1" style="text-decoration:none;color:#003588">
+                <a style="text-decoration:none" href="{{url('/login')}}" class=" bg-light p-2 mx-1" style="text-decoration:none;color:#003588">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg> <strong>Mi cuenta</strong>
                 </a>
               </li>
@@ -208,10 +208,10 @@
                      <a style="text-decoration:none" href="{{url('/')}}" class="nav-link">Inicio</a>
                    </li>
          
-         <li class="nav-item active"><a style="text-decoration:none" href="{{url('/nosotros')}}" class="nav-link">Nosotros</a></li>
+                   <li class="nav-item active"><a style="text-decoration:none" href="{{url('/nosotros')}}" class="nav-link">Nosotros</a></li>
                    <li class="nav-item active"><a style="text-decoration:none" href="{{url('/contacto')}}" class="nav-link">Contacto</a></li>
           
-          <li class="nav-item dropdown">
+                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Soluciones</a>
                      <ul class="dropdown-menu" aria-labelledby="pages">
                        <li><a style="text-decoration:none" href="{{url('/solucion-iluminacion')}}" class="dropdown-item">Iluminación  </a></li>
@@ -229,48 +229,48 @@
          <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación de hogar y Jardín</a>
                      <ul class="dropdown-menu" aria-labelledby="pages">
-                       <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Tecnolite</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Calux</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}"class="dropdown-item">Philco</a></li>
+                       <li><a style="text-decoration:none" href="{{url('buscar?producto=Tecnolite')}}" class="dropdown-item">Tecnolite</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Calux')}}" class="dropdown-item">Calux</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Philco')}}"class="dropdown-item">Philco</a></li>
            </ul>
                    </li>
          <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación Industrial</a>
                      <ul class="dropdown-menu" aria-labelledby="pages">
-                       <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Supra</a></li>
-           <li><a style="text-decoration:none"href="{{url('/solucion-venta')}}"class="dropdown-item">Energain</a></li>
+                       <li><a style="text-decoration:none" href="{{url('buscar?producto=Supra')}}" class="dropdown-item">Supra</a></li>
+           <li><a style="text-decoration:none"href="{{url('buscar?producto=Energain')}}"class="dropdown-item">Energain</a></li>
            </ul>
                    </li>
          <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación de Proyectos</a>
                      <ul class="dropdown-menu" aria-labelledby="pages">
-                       <li><a style="text-decoration:none"href="{{url('/solucion-venta')}}" class="dropdown-item">Zeraus</a></li>
-           <li><a style="text-decoration:none"href="{{url('/solucion-venta')}}" class="dropdown-item">Construlita</a></li>
+                       <li><a style="text-decoration:none"href="{{url('buscar?producto=Zeraus')}}" class="dropdown-item">Zeraus</a></li>
+           <li><a style="text-decoration:none"href="{{url('buscar?producto=Construlita')}}" class="dropdown-item">Construlita</a></li>
            </ul>
                    </li>
          <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Iluminación Variedad</a>
                      <ul class="dropdown-menu" aria-labelledby="pages">
-                       <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Forthlighting</a></li>
-           <li><a style="text-decoration:none"href="{{url('/solucion-venta')}}" class="dropdown-item">Simon</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Tlapps</a></li>
+                       <li><a style="text-decoration:none" href="{{url('buscar?producto=Forthlighting')}}" class="dropdown-item">Forthlighting</a></li>
+           <li><a style="text-decoration:none"href="{{url('buscar?producto=Simon')}}" class="dropdown-item">Simon</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Tlapps')}}" class="dropdown-item">Tlapps</a></li>
            </ul>
                    </li>
          
          <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Material Eléctrico y Otros</a>
                      <ul class="dropdown-menu" aria-labelledby="pages">
-                       <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">IUSA</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Conductores del Norte</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Tuboflex</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Plastistrech</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Anclo</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Argos</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Jupiter</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Emsa</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">TAMSA</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">Charofil</a></li>
-           <li><a style="text-decoration:none" href="{{url('/solucion-venta')}}" class="dropdown-item">ILUMAX</a></li>
+                       <li><a style="text-decoration:none" href="{{url('buscar?producto=IUSA')}}" class="dropdown-item">IUSA</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Conductores del Norte')}}" class="dropdown-item">Conductores del Norte</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Tuboflex')}}" class="dropdown-item">Tuboflex</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Plastistrech')}}" class="dropdown-item">Plastistrech</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Anclo')}}" class="dropdown-item">Anclo</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Argos')}}" class="dropdown-item">Argos</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Jupiter')}}" class="dropdown-item">Jupiter</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Emsa')}}" class="dropdown-item">Emsa</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=TAMSA')}}" class="dropdown-item">TAMSA</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=Charofil')}}" class="dropdown-item">Charofil</a></li>
+           <li><a style="text-decoration:none" href="{{url('buscar?producto=ILUMAX')}}" class="dropdown-item">ILUMAX</a></li>
            </ul>
                    </li>
          
@@ -484,7 +484,8 @@
         
 
         
-
+        var totalCarritoMoney=Number($("#totalCarritoMoney").html());
+        var x_totalCarritoMoney=1;
         function buscar(){
             $("#searchModal").modal('show');
         }
@@ -501,12 +502,16 @@
                success: function(response) {
                    if (response.status === 'success') {
                        $("#totalCarritoMoney").html(response.precioTotal);
+                       if(x_totalCarritoMoney==1){
+                          totalCarritoMoney=Number($("#totalCarritoMoney").html());
+                          x_totalCarritoMoney++;
+                       }
                        $(".circlTotal").html(response.total);
                    } else if (response.status === 'error') {
                        $.notify('Error: ' + response.message, "danger");
                    }
                   
-                   if (pago == 1) {
+                   if (pago == 1 && Number(response.precioTotal)!=0) {
                       window.location.href = "{{ url('/cart') }}";
                    }
                },
@@ -519,25 +524,30 @@
 
 
        function cart(id, total, pago = null) {
-          console.log("Enviando a AJAX:", { id, total }); // Depuración
+          
 
           $.ajax({
               url: '{{ url("/agregar-al-carrito") }}',
               type: 'POST',
               data: { id: id, total: total },
               success: function(response) {
-                  if (response.status === 'success') {
-                      $("#totalCarritoMoney").html(response.precioTotal);
-                      $(".mycart").html(response.total); // Actualizar contador
-                      getTotalCart(pago);
-                      $.notify("Producto agregado al carrito!", "success");
-                      $(".delete-cart").removeClass("d-none");
-                      $(".btcart").html('<i class="fa fa-shopping-cart"></i>  Actualizar');
+                  if (response.status === 'login') {
+                    $.notify("Alto! Inicia sesión con tu usuario de cliente antes de comprar", "error");
+                  }else{
+                    if (response.status === 'success') {
+                        $("#totalCarritoMoney").html(response.precioTotal);
+                        $(".mycart").html(response.total); // Actualizar contador
+                        getTotalCart(pago);
+                        //$.notify("Producto agregado al carrito!", "success");
+                        $(".delete-cart").removeClass("d-none");
+                        $(".btcart").html('<i class="fa fa-shopping-cart"></i>  Actualizar');
 
-                      
-                  } else {
-                      $.notify("Error: " + response.message, "danger");
+                        
+                    } else {
+                        $.notify("Error: " + response.message, "danger");
+                    }
                   }
+                  
               },
               error: function(xhr) {
                   console.error("Error en AJAX:", xhr.responseText);
@@ -548,13 +558,14 @@
 
 
 
-        function deleteCart(productId) {
+        function deleteCart(productId,refresh=null) {
           
           $.ajax({
               url: '{{url("/carrito/eliminar/")}}'+'/' + productId,
               type: 'POST',
               success: function(response) {
                   if (response.status === 'success') {
+                      
                       $("#totalCarritoMoney").html(response.costo);
                       getTotalCart();
                       // Eliminar el div correspondiente al producto
@@ -569,13 +580,20 @@
                           $(".pagar").hide();
                       }
                       
-                      $(".mycart").html(response.total);
-                      $.notify('Producto eliminado', "success");
-                      $(".delete-cart").addClass("d-none");
-                      $(".qtycart").val(1);
-                      
+                      if(refresh==null){
+                        $(".mycart").html(response.total);
+                        //$.notify('Producto eliminado', "success");
+                        $(".delete-cart").addClass("d-none");
+                        $(".qtycart").val(1);
+                        $(".btcart").html('<i class="fa fa-shopping-cart"></i>  Agregar');
+                      }
 
-                      $(".btcart").html('<i class="fa fa-shopping-cart"></i>  Agregar');
+                      if (refresh == 1 && Number(response.costo)!=totalCarritoMoney) {
+                        //$.notify('Producto eliminado', "success");
+                        window.location.reload();
+                      }else if(Number(response.costo)==totalCarritoMoney){
+                        $.notify('Error al eliminar el producto', "error");
+                      }
 
 
                   } else {

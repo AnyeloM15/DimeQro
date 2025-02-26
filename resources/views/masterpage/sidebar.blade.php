@@ -29,7 +29,7 @@
                         <span class="hide-menu">Dashboard</span>
                     </a>
                 </li>
-
+                @if(auth()->check() && auth()->user()->role === 'admin')
                 <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                     <span class="hide-menu">Administrar</span>
@@ -89,6 +89,24 @@
                     </a>
                 </li>
 
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{url('/contacts')}}" aria-expanded="false">
+                        <span>
+                        <i class="ti ti-circle"></i>
+                        </span>
+                        <span class="hide-menu">Contacto</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{url('/users')}}" aria-expanded="false">
+                        <span>
+                        <i class="ti ti-circle"></i>
+                        </span>
+                        <span class="hide-menu">Administrar Usuarios</span>
+                    </a>
+                </li>
+                @endif
                 
 
                 

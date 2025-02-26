@@ -13,7 +13,7 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-	RewriteCond %{REQUEST_URI} !(\.webp|\.min|\.otf|\.woff|\.mp4|\.css|\.js|\.png|\.jpeg|\.jpg|\.woff|\.woff2|\.json|\.gif|robots\.txt|\.ico)$ [NC]
+	RewriteCond %{REQUEST_URI} !(\.png|\.webp|\.min|\.otf|\.woff|\.mp4|\.css|\.js|\.png|\.jpeg|\.jpg|\.woff|\.woff2|\.json|\.gif|robots\.txt|\.ico)$ [NC]
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^ index.php [L]
@@ -21,6 +21,6 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_URI} !^/public/
-	RewriteRule ^(landing|lib|admin|dist|build|vendor|openpay|micuenta|assets|themes|video|img|css|js|storage|images|fonts|favicons|gulp|src|is|vendors)/(.*)$ public/$1/$2 [L,NC]
+	RewriteRule ^(comprobante|landing|lib|admin|dist|build|vendor|openpay|micuenta|assets|themes|video|img|css|js|storage|images|fonts|favicons|gulp|src|is|vendors)/(.*)$ public/$1/$2 [L,NC]
 
 </IfModule>
